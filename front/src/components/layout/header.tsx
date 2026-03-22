@@ -52,7 +52,6 @@ export function Header() {
                     </div>
                 </div>
             </div>
-
             <div className={`md:hidden overflow-hidden transition-all duration-200 ease-out ${menuOpened ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className={`md:hidden transition-all duration-200 ease-out ${menuOpened ? 'translate-y-0' : '-translate-y-2'}`}>
                     {menuItems.map((item) => (
