@@ -3,20 +3,20 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "DevStore",
+    title: "DevStore",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="pt-br">
-      <body
-      >
-        {children}
-      </body>
-    </html>
-  );
+    return (
+        <html lang="pt-br">
+            <body
+            >
+                {children}
+            </body>
+        </html>
+    );
 }
