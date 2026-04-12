@@ -1,4 +1,5 @@
 import { Banners } from "@/components/home/banners";
+import { ProductListSkeleton } from "@/components/home/product-list-skeleton";
 import { data } from "@/types/data";
 import Image from "next/image";
 
@@ -35,6 +36,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
+            <ProductListSkeleton />
         </div >
     );
 }
