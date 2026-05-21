@@ -1,3 +1,4 @@
+import { ProductListFilter } from "@/components/categories/product-list-filter";
 import Link from "next/link";
 
 type Props = {
@@ -14,18 +15,8 @@ export default async function Page({ params, searchParams }: Props) {
             <div className="text-gray-500 mb-4">
                 <Link href={'/'}>Home</Link> &gt;
             </div>
-            <div className=" flex flex-col md:flex-row justify-between items-start md:items-center">
-                <div className="text-2xl"><strong>99</strong> Produtos</div>
-                <div className="">
-                    ...
-                </div>
-            </div>
 
-            <div className="flex flex-col md:flex-row gap-8 mt-8">
-                <div className="flex-1 md:max-w-70 ">filtro</div>
-                <div className="flex-1">grid de produtos</div>
-            </div>
-
+            <ProductListFilter />
         </div>
     );
 }
